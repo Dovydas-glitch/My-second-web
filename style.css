@@ -36,7 +36,7 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 1.4rem;
-  color: #fff;
+  color: rgb(197, 197, 197);
   text-decoration: none;
 }
 header nav ul li a:hover {
@@ -122,7 +122,7 @@ header nav ul li:not(:last-child) {
   text-transform: uppercase;
 }
 .form_container .white {
-  background: #fff;
+  background: rgb(192, 192, 192);
   padding: 0 50px;
   display: -webkit-box;
   display: flex;
@@ -174,7 +174,7 @@ header nav ul li:not(:last-child) {
 .form_container .green h3 {
   font-weight: 500;
   font-size: 1.8rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 .form_container .custom_radio {
@@ -196,7 +196,7 @@ header nav ul li:not(:last-child) {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  border: 1px solid #41d395;
+  border: 1px solid #26f352;
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -211,7 +211,7 @@ header nav ul li:not(:last-child) {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: #41d395;
+  background-color: #26f352;
   border-radius: 50%;
   -webkit-transform-origin: center center;
   transform-origin: center center;
@@ -301,10 +301,10 @@ header nav ul li:not(:last-child) {
   --mobileMenuDark: #1c1c1c;
   --lightGrey: #f5f5f5;
   --lightestGrey: #d8d8d8;
-  --green: #41d395;
-  --orange: #e27866;
-  --orange_hover: #a8422f;
-  --blue: #6696e2;
+  --green: #27fa31;
+  --orange: #ee552e;
+  --orange_hover: #e06500;
+  --blue: #03bed6;
 }
 .hero {
   position: relative;
@@ -433,8 +433,8 @@ header nav ul li:not(:last-child) {
       linear,
       right top,
       left top,
-      from(#6696e2),
-      to(#e27866)
+      from(#13cff0),
+      to(#ff5234)
     ) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #6696e2 0%, #e27866 100%) 0%
     0% no-repeat padding-box;
