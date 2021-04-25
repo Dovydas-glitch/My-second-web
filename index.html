@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My web</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/lgoo.svg" sizes="any" type="image/svg+xml">
+    <title>MYWEB</title>
+</head>
+<body>
     <header>
         <div class="container">
-            <a class="logo" href="#hero">
-                <img src="foto" alt="Cheshire County">
-            </a>
-
+            <a href="#hero"><img src="images/logo.svg" alt="Cheshire County"></a>
             <nav id="navigation">
-                <ul>
+                <ul id="menu">
                     <li>
                         <a href="#features">Features</a>
                     </li>
@@ -25,170 +22,541 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Pricing</a>
+                        <a href="#pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="#">Reviews</a>
+                        <a href="#reviews">Reviews</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
-
-            <img class="menu-icon" id="mobile-menu-trigger" src="images/menu.svg" alt="Menu">
+            <img class="menu_icon" id="mobileBurger" src="images/menu.svg" alt="Menu">
         </div>
     </header>
     <main>
         <section class="hero" id="hero">
-            <img class="hero-image" src="images/hero-min.jpg" alt="">
-            <div class="hero-content container">
-                <h1>Hello world</h1>
-                
-                <div class="form-container">
+            <div class="flex_container container">
+                <div class="content">
+                    <img class="hero_image" src="images/city.jpg" alt="">
+                    <div class="hero_content">
+                        <img class="hero_logo" src="images/logo.svg" alt="Cheshire County">
+                        <h1>Explained propriety<br>of out perpetual to you</h1>
+                        <svg class="svg_spacer" xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2">
+                            <line id="Line_13" data-name="Line 13" x2="64" transform="translate(0 1)" fill="none" stroke="#fff" stroke-width="2"/>
+                        </svg> 
+                        <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.<br>Proceed how any engaged visitor. Explained propriety of out perpetual his you.<br>Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+                        <div class="download_button"><a href="/images/myw3schoolsimage.jpg" download>DOWNLOAD</a></div>
+                    </div>
+                </div>
+                <div class="form_container">
                     <form>
-                        <h4>Type of subscription</h4>
-
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="sub-month">
-                            <label for="sub-month">
-                                <div class="radio"></div>
-                                <span>MONTHLY</span>
-                            </label>
+                        <div class="grey">
+                            <h3>Try your <span>free</span> trial today</h3>
                         </div>
-
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="sub-year">
-                            <label for="sub-year">
-                                <div class="radio"></div>
-                                <span>YEARLY</span>
-                            </label>
+                        <div class="white">
+                            <h4>Your details</h4>
+                            <input type="text" name="name" id="firstName" placeholder="First name" required>
+                            <input type="text" name="surname" id="lastName" placeholder="Last name" required>
+                            <input type="tel" name="number" id="phoneNumber" placeholder="Phone number" required>
+                            <h4>Type of subscription</h4>
+                            <div class="select_container">
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="subMonth" required>
+                                    <label for="subMonth">
+                                        <div class="radio">
+                                        </div>
+                                        <span>MONTHLY</span>
+                                    </label>
+                                </div>
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="subYear" required>
+                                    <label for="subYear">
+                                        <div class="radio">    
+                                        </div>
+                                        <span>YEARLY</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                    
+                        <div class="green no_select" name="mysubmitbutton" id="subSubmitButton">
+                            <h3>Get started</h3>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+        <section class="hero_footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="content">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <div class="social_icons">
+                        <a href="facebook.com"><svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" width="10.813" height="20" viewBox="0 0 10.813 20">
+                            <path id="Path_63" data-name="Path 63" d="M32.483,0,29.889,0a4.555,4.555,0,0,0-4.8,4.922V7.191H22.485a.408.408,0,0,0-.408.408v3.288a.408.408,0,0,0,.408.408h2.608v8.3A.408.408,0,0,0,25.5,20h3.4a.408.408,0,0,0,.408-.408V11.3h3.049a.408.408,0,0,0,.408-.408V7.6a.408.408,0,0,0-.408-.408H29.31V5.268c0-.925.22-1.394,1.425-1.394h1.747a.408.408,0,0,0,.408-.408V.412A.408.408,0,0,0,32.483,0Z" transform="translate(-22.077)" fill="#e27866"/>
+                          </svg></a>
+                         <a href="instagram.com"><svg id="instagram-logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path id="Path_64" data-name="Path 64" d="M14.481,0H5.519A5.526,5.526,0,0,0,0,5.519v8.961A5.525,5.525,0,0,0,5.519,20h8.961A5.526,5.526,0,0,0,20,14.481V5.519A5.525,5.525,0,0,0,14.481,0Zm3.745,14.481a3.749,3.749,0,0,1-3.745,3.745H5.519a3.749,3.749,0,0,1-3.745-3.745V5.519A3.749,3.749,0,0,1,5.519,1.774h8.961a3.749,3.749,0,0,1,3.745,3.745v8.961Z" fill="#e27866"/>
+                            <path id="Path_65" data-name="Path 65" d="M46.121,40.97a5.153,5.153,0,1,0,5.153,5.153A5.159,5.159,0,0,0,46.121,40.97Zm0,8.532A3.379,3.379,0,1,1,49.5,46.123,3.383,3.383,0,0,1,46.121,49.5Z" transform="translate(-36.121 -36.123)" fill="#e27866"/>
+                            <path id="Path_66" data-name="Path 66" d="M120.222,28.251a1.3,1.3,0,1,0,.92.381A1.306,1.306,0,0,0,120.222,28.251Z" transform="translate(-104.853 -24.909)" fill="#e27866"/>
+                          </svg></a>
+                        <a href="twitter.com"><svg xmlns="http://www.w3.org/2000/svg" width="24.044" height="20" viewBox="0 0 24.044 20">
+                            <path id="twitter" d="M23.662,36.818A9.521,9.521,0,0,1,22,37.377,5.169,5.169,0,0,0,23.368,35.2h0a.271.271,0,0,0-.4-.316h0a9.566,9.566,0,0,1-2.534,1.047.646.646,0,0,1-.158.02.672.672,0,0,1-.444-.169,5.184,5.184,0,0,0-3.43-1.294,5.542,5.542,0,0,0-1.642.254,5.022,5.022,0,0,0-3.385,3.618,5.53,5.53,0,0,0-.123,1.909.186.186,0,0,1-.047.145.192.192,0,0,1-.143.065h-.018A13.592,13.592,0,0,1,1.706,35.49h0a.271.271,0,0,0-.444.035h0a5.19,5.19,0,0,0,.843,6.3,4.645,4.645,0,0,1-1.182-.458h0a.271.271,0,0,0-.4.234h0a5.19,5.19,0,0,0,3.028,4.782H3.437a4.664,4.664,0,0,1-.873-.083h0a.271.271,0,0,0-.309.349h0a5.2,5.2,0,0,0,4.1,3.534A9.565,9.565,0,0,1,1,51.811H.4a.4.4,0,0,0-.388.3.411.411,0,0,0,.2.454,14.227,14.227,0,0,0,7.149,1.928,14.422,14.422,0,0,0,6.109-1.3,13.491,13.491,0,0,0,4.47-3.35,14.686,14.686,0,0,0,2.737-4.584,14.482,14.482,0,0,0,.93-5.017v-.079a.882.882,0,0,1,.33-.687A10.246,10.246,0,0,0,24,37.216h0a.271.271,0,0,0-.335-.4Z" transform="translate(0 -34.491)" fill="#e27866"/>
+                          </svg></a>
+                        <a href="pinterest.com"><svg id="pinterest" xmlns="http://www.w3.org/2000/svg" width="16.25" height="20" viewBox="0 0 16.25 20">
+                            <g id="Group_20" data-name="Group 20">
+                              <path id="Path_67" data-name="Path 67" d="M56.4,0C50.919,0,48,3.513,48,7.343c0,1.776.993,3.991,2.581,4.694.241.109.373.063.426-.161.048-.17.256-.989.358-1.375a.354.354,0,0,0-.085-.348,4.555,4.555,0,0,1-.946-2.764,5.388,5.388,0,0,1,5.738-5.265c3.125,0,5.311,2.03,5.311,4.934,0,3.281-1.736,5.552-3.993,5.552a1.788,1.788,0,0,1-1.884-2.193,23.766,23.766,0,0,0,1.055-4.038,1.551,1.551,0,0,0-1.605-1.706c-1.271,0-2.3,1.259-2.3,2.949a4.2,4.2,0,0,0,.38,1.8s-1.258,5.08-1.491,6.029a13.491,13.491,0,0,0,.093,4.431.132.132,0,0,0,.24.061,15.75,15.75,0,0,0,2.07-3.9c.155-.571.791-2.888.791-2.888a3.456,3.456,0,0,0,2.915,1.39c3.83,0,6.6-3.366,6.6-7.544C64.24,3,60.812,0,56.4,0Z" transform="translate(-48.004)" fill="#e27866"/>
+                            </g>
+                          </svg></a>
+                        <a href="google.com"><svg id="Group_92" data-name="Group 92" xmlns="http://www.w3.org/2000/svg" width="20.002" height="20" viewBox="0 0 20.002 20">
+                            <path id="Path_68" data-name="Path 68" d="M2.727,292.382a2.631,2.631,0,0,0-1.932.8,2.744,2.744,0,0,0,0,3.863,2.631,2.631,0,0,0,1.932.8,2.63,2.63,0,0,0,1.932-.8,2.744,2.744,0,0,0,0-3.863A2.63,2.63,0,0,0,2.727,292.382Z" transform="translate(0 -277.837)" fill="#e27866"/>
+                            <path id="Path_69" data-name="Path 69" d="M9.005,149.922a12.559,12.559,0,0,0-3.679-2.578A12.735,12.735,0,0,0,.98,146.2H.909a.828.828,0,0,0-.611.241.837.837,0,0,0-.3.668v1.918a.874.874,0,0,0,.234.611.863.863,0,0,0,.589.284,8.835,8.835,0,0,1,5.561,2.621A8.834,8.834,0,0,1,9.005,158.1a.888.888,0,0,0,.895.824h1.918a.837.837,0,0,0,.667-.3.861.861,0,0,0,.242-.682,12.742,12.742,0,0,0-1.144-4.346A12.56,12.56,0,0,0,9.005,149.922Z" transform="translate(0 -138.928)" fill="#e27866"/>
+                            <path id="Path_70" data-name="Path 70" d="M18.295,11.944A19.914,19.914,0,0,0,14.119,5.9,19.912,19.912,0,0,0,8.075,1.724,19.712,19.712,0,0,0,.952.02H.909A.85.85,0,0,0,.284.276.84.84,0,0,0,0,.929V2.96a.87.87,0,0,0,.249.618.85.85,0,0,0,.6.277A16.093,16.093,0,0,1,6.655,5.3a16.331,16.331,0,0,1,4.773,3.288,16.33,16.33,0,0,1,3.288,4.773,15.879,15.879,0,0,1,1.435,5.8.851.851,0,0,0,.277.6.888.888,0,0,0,.632.249H19.09a.839.839,0,0,0,.653-.284A.822.822,0,0,0,20,19.068,19.71,19.71,0,0,0,18.295,11.944Z" transform="translate(0 -0.02)" fill="#e27866"/>
+                          </svg></a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_section" id="features">
+            <img class="hero_image" src="images/mountain.jpg" alt="">
+                <div class="container">
+                    <nav>
+                        <ul class="no_select">
+                            <li class="active" data-slide="1" data-aos="fade-in"><span>Register</span></li>
+                            <li data-slide="2" data-aos="fade-in"><span>Apply</span></li>
+                            <li data-slide="3" data-aos="fade-in"><span>Receive</span></li>
+                        </ul>
+                    </nav>
+                    <div class="tab-content active" data-slide="1">
+                        <div class="flex">
+                            <div class="content">
+                                <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                            <div class="images">
+                                <div class="two_images">
+                                    <div class="explore">
+                                        <img class="image_cover" src="images/veges2.jpg" alt="vegetables">
+                                    </div>
+                                    <div class="veges">
+                                        <img class="image_cover" src="images/veges.jpg" alt="vegetables">
+                                    </div>
+                                </div>
+                                <div class="one_bigger_image">
+                                    <img class="image_cover" src="images/shoes.jpg" alt="vegetables">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-slide="2">
+                        <div class="flex">
+                            <div class="content">
+                                <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                            <div class="images">
+                                <div class="two_images">
+                                    <div class="explore">
+                                        <img class="image_cover" src="images/veges2.jpg" alt="vegetables">
+                                    </div>
+                                    <div class="veges">
+                                        <img class="image_cover" src="images/veges.jpg" alt="vegetables">
+                                    </div>
+                                </div>
+                                <div class="one_bigger_image">
+                                    <img class="image_cover" src="images/shoes.jpg" alt="vegetables">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" data-slide="3">
+                        <div class="flex">
+                            <div class="content">
+                                <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                            <div class="images">
+                                <div class="two_images">
+                                    <div class="explore">
+                                        <img class="image_cover" src="images/veges2.jpg" alt="vegetables">
+                                    </div>
+                                    <div class="veges">
+                                        <img class="image_cover" src="images/veges.jpg" alt="vegetables">
+                                    </div>
+                                </div>
+                                <div class="one_bigger_image">
+                                    <img class="image_cover" src="images/shoes.jpg" alt="vegetables">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="black_section" id="about">
+            <div class="container black_section_content">
+                <div class="container_logo">
+                    <img class="black_section_logo" src="images/logo.svg" alt="Cheshire County">
+                </div>
+                <div class="content">
+                    <h2>Erat tempor tempus<br>berat malesuada</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="2" viewBox="0 0 200 2">
+                        <rect id="divider_orange_u7_copy_4" data-name="divider_orange_u7 copy 4" width="200" height="2" fill="#e27866"/>
+                      </svg>
+                    <div class="spacer"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    <div class="bullets">
+                        <div class="bullet">
+                            <div class="image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                    <g id="Ellipse_12" data-name="Ellipse 12" fill="#e27866" stroke="#e27866" stroke-width="1">
+                                      <circle cx="25" cy="25" r="25" stroke="none"/>
+                                      <circle cx="25" cy="25" r="24.5" fill="none"/>
+                                    </g>
+                                    <path id="Path_81" data-name="Path 81" d="M13.5,67.75a5.2,5.2,0,0,0-1.464.234,2.6,2.6,0,0,1,.339,1.266,2.625,2.625,0,0,1-2.625,2.625,2.6,2.6,0,0,1-1.266-.339A5.236,5.236,0,1,0,13.5,67.75Zm13.337,4.566A15.035,15.035,0,0,0,13.5,64,15.037,15.037,0,0,0,.164,72.316a1.516,1.516,0,0,0,0,1.368A15.035,15.035,0,0,0,13.5,82a15.037,15.037,0,0,0,13.337-8.316A1.516,1.516,0,0,0,26.837,72.316ZM13.5,79.75A12.751,12.751,0,0,1,2.348,73,12.751,12.751,0,0,1,13.5,66.25,12.751,12.751,0,0,1,24.653,73,12.75,12.75,0,0,1,13.5,79.75Z" transform="translate(12 -48)" fill="#fff"/>
+                                  </svg>
+                                  
+                            </div>
+                            <div class="content">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                        </div>   
+                        <div class="bullet">
+                            <div class="image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                    <g id="Ellipse_12" data-name="Ellipse 12" fill="#e27866" stroke="#e27866" stroke-width="1">
+                                      <circle cx="25" cy="25" r="25" stroke="none"/>
+                                      <circle cx="25" cy="25" r="24.5" fill="none"/>
+                                    </g>
+                                    <path id="Path_81" data-name="Path 81" d="M13.5,67.75a5.2,5.2,0,0,0-1.464.234,2.6,2.6,0,0,1,.339,1.266,2.625,2.625,0,0,1-2.625,2.625,2.6,2.6,0,0,1-1.266-.339A5.236,5.236,0,1,0,13.5,67.75Zm13.337,4.566A15.035,15.035,0,0,0,13.5,64,15.037,15.037,0,0,0,.164,72.316a1.516,1.516,0,0,0,0,1.368A15.035,15.035,0,0,0,13.5,82a15.037,15.037,0,0,0,13.337-8.316A1.516,1.516,0,0,0,26.837,72.316ZM13.5,79.75A12.751,12.751,0,0,1,2.348,73,12.751,12.751,0,0,1,13.5,66.25,12.751,12.751,0,0,1,24.653,73,12.75,12.75,0,0,1,13.5,79.75Z" transform="translate(12 -48)" fill="#fff"/>
+                                  </svg>
+                                  
+                            </div>
+                            <div class="content">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
+                        </div>  
+                                            
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="awesome_section">
+            <div class="container">
+                <h1>WHY THIS IS AWESOME</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2">
+                    <rect id="divider_orange_u7_copy_3" data-name="divider_orange_u7 copy 3" width="64" height="2" fill="#e27866"/>
+                  </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="flex_container">
+                    <div class="design_container small_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                            <g id="Group_74" data-name="Group 74" transform="translate(-280 -2832)">
+                              <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(280 2832)" fill="none" stroke="#e27866" stroke-width="1">
+                                <circle cx="25" cy="25" r="25" stroke="none"/>
+                                <circle cx="25" cy="25" r="24.5" fill="none"/>
+                              </g>
+                              <path id="Path_79" data-name="Path 79" d="M4.263,15.918c-.382-.382-.183-.274-1.1-.52a3.169,3.169,0,0,1-1.117-.585L.051,19.7a.7.7,0,0,0,.678.967l2.314-.088,1.592,1.681a.7.7,0,0,0,1.161-.218l2.286-5.6a3.152,3.152,0,0,1-3.817-.518ZM16.809,19.7l-1.992-4.885A3.161,3.161,0,0,1,13.7,15.4c-.925.248-.722.14-1.1.52a3.152,3.152,0,0,1-3.818.518l2.286,5.6a.7.7,0,0,0,1.161.218l1.592-1.681,2.314.088A.7.7,0,0,0,16.809,19.7Zm-5.261-4.774c.671-.683.748-.624,1.7-.884a1.785,1.785,0,0,0,1.25-1.273,2.822,2.822,0,0,1,1.14-2.009A1.822,1.822,0,0,0,16.1,9.019a2.856,2.856,0,0,1,0-2.32,1.822,1.822,0,0,0-.458-1.738A2.823,2.823,0,0,1,14.5,2.952a1.785,1.785,0,0,0-1.25-1.273A2.753,2.753,0,0,1,11.278.519,1.747,1.747,0,0,0,9.57.053a2.718,2.718,0,0,1-2.279,0A1.746,1.746,0,0,0,5.583.519a2.751,2.751,0,0,1-1.974,1.16,1.785,1.785,0,0,0-1.25,1.273,2.822,2.822,0,0,1-1.14,2.009A1.821,1.821,0,0,0,.761,6.7a2.855,2.855,0,0,1,0,2.32,1.823,1.823,0,0,0,.458,1.739,2.822,2.822,0,0,1,1.14,2.009,1.785,1.785,0,0,0,1.25,1.273c.983.268,1.056.226,1.7.884a1.745,1.745,0,0,0,2.184.256,1.742,1.742,0,0,1,1.868,0A1.745,1.745,0,0,0,11.548,14.924ZM4.287,7.72A4.144,4.144,0,1,1,8.43,11.937,4.181,4.181,0,0,1,4.287,7.72Z" transform="translate(297.002 2846.008)" fill="#e27866"/>
+                            </g>
+                          </svg>
+                        <h3>Thoughtful Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod ibendum laoreet.</p>
+                    </div>
+                    <div class="crafted_container small_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                            <g id="Group_73" data-name="Group 73" transform="translate(-401 -2827)">
+                              <path id="Path_76" data-name="Path 76" d="M20.3,37.711a11.426,11.426,0,0,0-7.64,2.965,9.181,9.181,0,0,0-2.373,3.389,9.181,9.181,0,0,0-2.373-3.389,11.426,11.426,0,0,0-7.64-2.965A.272.272,0,0,0,0,37.991a9.893,9.893,0,0,0,3.171,7.12A9.483,9.483,0,0,0,10.289,48a9.482,9.482,0,0,0,7.118-2.89,9.892,9.892,0,0,0,3.171-7.12A.272.272,0,0,0,20.3,37.711ZM10.288,41.663a9.829,9.829,0,0,1,1.575-1.8,10.692,10.692,0,0,1,2.153-1.614,11.785,11.785,0,0,0-3.456-6.153.429.429,0,0,0-.541,0,11.785,11.785,0,0,0-3.456,6.148,10.5,10.5,0,0,1,2.116,1.586A10.1,10.1,0,0,1,10.288,41.663Z" transform="translate(416 2812.005)" fill="#e27866"/>
+                              <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(401 2827)" fill="none" stroke="#e27866" stroke-width="1">
+                                <circle cx="25" cy="25" r="25" stroke="none"/>
+                                <circle cx="25" cy="25" r="24.5" fill="none"/>
+                              </g>
+                            </g>
+                          </svg>
+                        <h3>Well Crafted</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod ibendum laoreet.</p>
+                    </div>
+                    <div class="visa_container small_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                            <g id="Group_72" data-name="Group 72" transform="translate(-500 -2832)">
+                              <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(500 2832)" fill="none" stroke="#e27866" stroke-width="1">
+                                <circle cx="25" cy="25" r="25" stroke="none"/>
+                                <circle cx="25" cy="25" r="24.5" fill="none"/>
+                              </g>
+                              <path id="Path_78" data-name="Path 78" d="M18.99,40.051s.307,1.5.376,1.818H18.017c.133-.36.646-1.757.646-1.757s.133-.368.214-.6l.113.541Zm4.278-6.112v14.22A1.94,1.94,0,0,1,21.329,50.1H1.939A1.94,1.94,0,0,1,0,48.159V33.939A1.94,1.94,0,0,1,1.939,32h19.39A1.94,1.94,0,0,1,23.268,33.939ZM6.16,44.087l2.553-6.27H7L5.409,42.1l-.174-.869L4.67,38.346a.676.676,0,0,0-.735-.529H1.321l-.028.125a6.41,6.41,0,0,1,1.7.691l1.446,5.454Zm3.813.008,1.018-6.278H9.368L8.354,44.095Zm5.651-2.052c.008-.715-.428-1.26-1.361-1.709-.57-.287-.917-.481-.917-.776.008-.267.295-.541.933-.541a2.784,2.784,0,0,1,1.208.238l.145.069.222-1.357A4.034,4.034,0,0,0,14.4,37.7c-1.6,0-2.731.856-2.739,2.076-.012.9.808,1.4,1.422,1.7s.84.509.84.78c-.008.42-.509.614-.974.614a3.236,3.236,0,0,1-1.523-.335l-.214-.1-.226,1.41a4.957,4.957,0,0,0,1.81.335c1.7,0,2.816-.84,2.828-2.141Zm5.7,2.052-1.309-6.278H18.764a.8.8,0,0,0-.848.521L15.5,44.095h1.7s.279-.776.339-.941h2.084c.048.222.194.941.194.941Z" transform="translate(513 2816)" fill="#e27866"/>
+                            </g>
+                          </svg>
+                        <h3>Easy to Customize</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing_section" id="pricing">
+            <div class="container">
+                <h1>PRICING OPTIONS</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2">
+                    <rect id="divider_orange_u7_copy" data-name="divider_orange_u7 copy" width="64" height="2" fill="#41d395"/>
+                  </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="flex_container">
+                    <div class="design_container small_container">
+                        <div class="black"><h3>Basic</h3>
+                            <p class="price"><span>$</span>0</p>
+                            <p>Free for Life</p>
+                        </div>
+                        <div class="green"></div>
+                        <div class="white">
+                            <ul>
+                                <li>1gb od space</li>
+                                <li>10gb of bandwidth</li>
+                                <li>3 websites</li>
+                                <li>basic customization</li>
+                                <li>wordpress integration</li>
+                                <li>email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="crafted_container small_container">
+                        <div class="black"><h3>Professional</h3>
+                            <p class="price"><span>$</span>19</p>
+                            <p>Monthly Payment</p>
+                        </div>
+                        <div class="green">
+                            <ul>
+                                 <li>our most popular</li>
+                            </ul>
+                        </div>
+                        <div class="white">
+                            <ul>
+                                <li>1gb od space</li>
+                                <li>10gb of bandwidth</li>
+                                <li>12 websites</li>
+                                <li>advanced customization</li>
+                                <li>wordpress integration</li>
+                                <li>email support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="visa_container small_container">
+                        <div class="black"><h3>Enterprise</h3>
+                            <p class="price"><span>$</span>70</p>
+                            <p>Monthly Payment</p>
+                        </div>
+                        <div class="green"></div>
+                        <div class="white">
+                            <ul>
+                                <li>unlimited space</li>
+                                <li>unlimited bandwidth</li>
+                                <li>100 websites</li>
+                                <li>advanced customization</li>
+                                <li>wordpress integration</li>
+                                <li>24/7 customer support</li>
+                             </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="reviews">
+            <div class="container">
+                <div class="title">
+                    <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2"><path id="divider_orange_u7" d="M0,0H64V2H0Z" fill="#6696e2"/></svg>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illum expedita. Ssequi saepe hic tempora dolores ad esse perferendis.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor. Ab illum expedita, cumque incidunt debitis sequi saepe hic tempora dolores ad esse perferendis.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illum expedita, cumque incidunt debitis sequi saepe hic tempora dolores ad esse perferendis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illum expedita, cumque incidunt debitis sequi saepe hic tempora dolores ad esse perferendis.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illum expedita, cumque incidunt debitis sequi saepe hic tempora dolores ad esse perferendis.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="quote">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab illum expedita.</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="person">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="name_surname"><h3>Jamy H.</h3></div>
+                                        <div class="position"><p>Manager</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>                
+                </div>
+            </div>
+        </section>
+        <section class="contact_us" id="contact">
+            <div class="container">
+                <h2>Contact us</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2"><rect id="divider_orange_u7_copy_2" data-name="divider_orange_u7 copy 2" width="64" height="2" fill="#e27866"/></svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="form_container">
+                    <form>
+                        <div class="white">
+                            <input type="text" name="name" id="firstName" placeholder="First name" required>
+                            <input type="text" name="surname" id="lastName" placeholder="Last name" required>
+                            <input type="tel" name="number" id="phoneNumber" placeholder="Phone number" required>
+                            <div class="select_container">
+                                <div class="custom_radio">
+                                    <input type="radio" name="identification" id="identPersonal" required>
+                                    <label for="identPersonal">
+                                        <div class="radio">
+                                        </div>
+                                        <span>PERSONAL</span>
+                                    </label>
+                                </div>
+                                <div class="custom_radio">
+                                    <input type="radio" name="identification" id="identCompany" required>
+                                    <label for="identCompany">
+                                        <div class="radio">    
+                                        </div>
+                                        <span>COMPANY</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div name="mysubmitbutton" id="identSubmitButton" class="green_button no_select">
+                                <h3>send</h3>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
-        <section class="tab-section">
+        <section class="section_footer">
             <div class="container">
-                <nav>
-                    <ul>
-                        <li class="active" data-slide="1" data-aos="fade-in"><span>Register</span></li>
-                        <li data-slide="2" data-aos="fade-in"><span>Apply</span></li>
-                        <li data-slide="3" data-aos="fade-in"><span>Receive</span></li>
-                        <li data-slide="4" data-aos="fade-in"><span>Something</span></li>
-                    </ul>
-                </nav>
-                
-                <div class="tab-content active" data-slide="1">
-                    <h2>Tab content 1</h2>
-                </div>
-                <div class="tab-content" data-slide="2">
-                    <h2>Tab content 2</h2>
-                </div>
-                <div class="tab-content" data-slide="3">
-                    <h2>Tab content 3</h2>
-                </div>
-                <div class="tab-content" data-slide="4">
-                    <h2>Tab content 4</h2>
-                </div>
-
-            </div>
-        </section>
-        <section class="custom-section" id="features">
-            <div class="container">
-                <h2 data-aos="flip-down" data-aos-once="false">What our customers are saying</h2>
-
-                
-                <div class="swiper-container reviews-swiper" data-aos="zoom-in-up" data-aos-once="false">
-                    
-                    <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>1</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>2</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>2</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>3</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>2</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cia bus foto">
-                            <h2>1</h2>
-                        </div>
+                <div class="footer">
+                    <div class="content">
+                        <p>© 2019 Cheshire County</p>
                     </div>
-
-               
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-        </section>
-        <section class="custom-section" id="about">
-            <div class="container">
-                <div class="content">
-                    <h1>ABOUT</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1llo>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                </div>
-            </div>
-        </section>
-        <section class="custom-section">
-            <div class="container">
-                <div class="content">
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
+                    <div class="social_icons">
+                        <a href="facebook.com"><svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" width="10.813" height="20" viewBox="0 0 10.813 20">
+                            <path id="Path_63" data-name="Path 63" d="M32.483,0,29.889,0a4.555,4.555,0,0,0-4.8,4.922V7.191H22.485a.408.408,0,0,0-.408.408v3.288a.408.408,0,0,0,.408.408h2.608v8.3A.408.408,0,0,0,25.5,20h3.4a.408.408,0,0,0,.408-.408V11.3h3.049a.408.408,0,0,0,.408-.408V7.6a.408.408,0,0,0-.408-.408H29.31V5.268c0-.925.22-1.394,1.425-1.394h1.747a.408.408,0,0,0,.408-.408V.412A.408.408,0,0,0,32.483,0Z" transform="translate(-22.077)" fill="#e27866"/>
+                          </svg></a>
+                         <a href="instagram.com"><svg id="instagram-logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path id="Path_64" data-name="Path 64" d="M14.481,0H5.519A5.526,5.526,0,0,0,0,5.519v8.961A5.525,5.525,0,0,0,5.519,20h8.961A5.526,5.526,0,0,0,20,14.481V5.519A5.525,5.525,0,0,0,14.481,0Zm3.745,14.481a3.749,3.749,0,0,1-3.745,3.745H5.519a3.749,3.749,0,0,1-3.745-3.745V5.519A3.749,3.749,0,0,1,5.519,1.774h8.961a3.749,3.749,0,0,1,3.745,3.745v8.961Z" fill="#e27866"/>
+                            <path id="Path_65" data-name="Path 65" d="M46.121,40.97a5.153,5.153,0,1,0,5.153,5.153A5.159,5.159,0,0,0,46.121,40.97Zm0,8.532A3.379,3.379,0,1,1,49.5,46.123,3.383,3.383,0,0,1,46.121,49.5Z" transform="translate(-36.121 -36.123)" fill="#e27866"/>
+                            <path id="Path_66" data-name="Path 66" d="M120.222,28.251a1.3,1.3,0,1,0,.92.381A1.306,1.306,0,0,0,120.222,28.251Z" transform="translate(-104.853 -24.909)" fill="#e27866"/>
+                          </svg></a>
+                        <a href="twitter.com"><svg xmlns="http://www.w3.org/2000/svg" width="24.044" height="20" viewBox="0 0 24.044 20">
+                            <path id="twitter" d="M23.662,36.818A9.521,9.521,0,0,1,22,37.377,5.169,5.169,0,0,0,23.368,35.2h0a.271.271,0,0,0-.4-.316h0a9.566,9.566,0,0,1-2.534,1.047.646.646,0,0,1-.158.02.672.672,0,0,1-.444-.169,5.184,5.184,0,0,0-3.43-1.294,5.542,5.542,0,0,0-1.642.254,5.022,5.022,0,0,0-3.385,3.618,5.53,5.53,0,0,0-.123,1.909.186.186,0,0,1-.047.145.192.192,0,0,1-.143.065h-.018A13.592,13.592,0,0,1,1.706,35.49h0a.271.271,0,0,0-.444.035h0a5.19,5.19,0,0,0,.843,6.3,4.645,4.645,0,0,1-1.182-.458h0a.271.271,0,0,0-.4.234h0a5.19,5.19,0,0,0,3.028,4.782H3.437a4.664,4.664,0,0,1-.873-.083h0a.271.271,0,0,0-.309.349h0a5.2,5.2,0,0,0,4.1,3.534A9.565,9.565,0,0,1,1,51.811H.4a.4.4,0,0,0-.388.3.411.411,0,0,0,.2.454,14.227,14.227,0,0,0,7.149,1.928,14.422,14.422,0,0,0,6.109-1.3,13.491,13.491,0,0,0,4.47-3.35,14.686,14.686,0,0,0,2.737-4.584,14.482,14.482,0,0,0,.93-5.017v-.079a.882.882,0,0,1,.33-.687A10.246,10.246,0,0,0,24,37.216h0a.271.271,0,0,0-.335-.4Z" transform="translate(0 -34.491)" fill="#e27866"/>
+                          </svg></a>
+                        <a href="pinterest.com"><svg id="pinterest" xmlns="http://www.w3.org/2000/svg" width="16.25" height="20" viewBox="0 0 16.25 20">
+                            <g id="Group_20" data-name="Group 20">
+                              <path id="Path_67" data-name="Path 67" d="M56.4,0C50.919,0,48,3.513,48,7.343c0,1.776.993,3.991,2.581,4.694.241.109.373.063.426-.161.048-.17.256-.989.358-1.375a.354.354,0,0,0-.085-.348,4.555,4.555,0,0,1-.946-2.764,5.388,5.388,0,0,1,5.738-5.265c3.125,0,5.311,2.03,5.311,4.934,0,3.281-1.736,5.552-3.993,5.552a1.788,1.788,0,0,1-1.884-2.193,23.766,23.766,0,0,0,1.055-4.038,1.551,1.551,0,0,0-1.605-1.706c-1.271,0-2.3,1.259-2.3,2.949a4.2,4.2,0,0,0,.38,1.8s-1.258,5.08-1.491,6.029a13.491,13.491,0,0,0,.093,4.431.132.132,0,0,0,.24.061,15.75,15.75,0,0,0,2.07-3.9c.155-.571.791-2.888.791-2.888a3.456,3.456,0,0,0,2.915,1.39c3.83,0,6.6-3.366,6.6-7.544C64.24,3,60.812,0,56.4,0Z" transform="translate(-48.004)" fill="#e27866"/>
+                            </g>
+                          </svg></a>
+                        <a href="google.com"><svg id="Group_92" data-name="Group 92" xmlns="http://www.w3.org/2000/svg" width="20.002" height="20" viewBox="0 0 20.002 20">
+                            <path id="Path_68" data-name="Path 68" d="M2.727,292.382a2.631,2.631,0,0,0-1.932.8,2.744,2.744,0,0,0,0,3.863,2.631,2.631,0,0,0,1.932.8,2.63,2.63,0,0,0,1.932-.8,2.744,2.744,0,0,0,0-3.863A2.63,2.63,0,0,0,2.727,292.382Z" transform="translate(0 -277.837)" fill="#e27866"/>
+                            <path id="Path_69" data-name="Path 69" d="M9.005,149.922a12.559,12.559,0,0,0-3.679-2.578A12.735,12.735,0,0,0,.98,146.2H.909a.828.828,0,0,0-.611.241.837.837,0,0,0-.3.668v1.918a.874.874,0,0,0,.234.611.863.863,0,0,0,.589.284,8.835,8.835,0,0,1,5.561,2.621A8.834,8.834,0,0,1,9.005,158.1a.888.888,0,0,0,.895.824h1.918a.837.837,0,0,0,.667-.3.861.861,0,0,0,.242-.682,12.742,12.742,0,0,0-1.144-4.346A12.56,12.56,0,0,0,9.005,149.922Z" transform="translate(0 -138.928)" fill="#e27866"/>
+                            <path id="Path_70" data-name="Path 70" d="M18.295,11.944A19.914,19.914,0,0,0,14.119,5.9,19.912,19.912,0,0,0,8.075,1.724,19.712,19.712,0,0,0,.952.02H.909A.85.85,0,0,0,.284.276.84.84,0,0,0,0,.929V2.96a.87.87,0,0,0,.249.618.85.85,0,0,0,.6.277A16.093,16.093,0,0,1,6.655,5.3a16.331,16.331,0,0,1,4.773,3.288,16.33,16.33,0,0,1,3.288,4.773,15.879,15.879,0,0,1,1.435,5.8.851.851,0,0,0,.277.6.888.888,0,0,0,.632.249H19.09a.839.839,0,0,0,.653-.284A.822.822,0,0,0,20,19.068,19.71,19.71,0,0,0,18.295,11.944Z" transform="translate(0 -0.02)" fill="#e27866"/>
+                          </svg></a> 
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="custom-section">
-            <div class="container">
-                <div class="content">
-                    <h1>Tekstas</h1>
-                    <h1>Tekstas</h1>
-                    <h1>Hello world</h1>
-                    <h1>Hello world</h1>
-                    
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
-
+    </main>    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="jss.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
